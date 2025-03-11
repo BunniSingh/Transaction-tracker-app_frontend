@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
-const API_URL = "https://transaction-tracker-app-backend.onrender.com";
+const API_URL = "https://transaction-tracker-app-backend.onrender.com/api/v1";
 
 // Fetch all transactions (GET /transactions)
 export const fetchTransactions = createAsyncThunk("transactions/fetch", async () => {
